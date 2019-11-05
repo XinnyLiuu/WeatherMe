@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap/bootstrap-material-design.min.css">
+    <title>WeatherMe</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav id="navbar" class="navbar navbar-dark bg-primary">
+        <a class="navbar-brand">WeatherMe</a>
+        <button id="refreshBtn" type="button" class="btn btn-raised btn-success">Relocate</button>
+    </nav>
+
+    <!-- Dashboard -->
+    <div id="dashboard" class="container">
+        <div class="row">
+            <div class="col-sm">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Address</h5>
+                        <p id="address" class="card-text"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Latitude</h5>
+                        <p id="lat" class="card-text"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Longitude</h5>
+                        <p id="long" class="card-text"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Temperature</h5>
+                        <p id="weather" class="card-text"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Search -->
+    <div id="search" class="container">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Search</h5>
+                <p class="card-text">Enter a zip</p>
+                <div class="input-group">
+                    <input id="searchZip" type="text" class="form-control" />
+                    <span class="space"></span>
+                    <div id="searchZipBtn" class="input-group-append">
+                        <button class="btn btn-outline-success" type="button">Search</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Map -->
+    <div id="map"></div>
+</body>
+
+<script type="text/javascript" src="bootstrap/bootstrap-material-design.min.js"></script>
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript"
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDr92cSqmmHncSueLdBAMVecPFuhdDUaAQ"></script>
+
+<!-- App setup -->
+<script type="text/javascript" src="js/Alert.js"></script>
+<script type="text/javascript" src="js/GoogleMap.js"></script>
+<script type="text/javascript" src="js/Weather.js"></script>
+<script type="text/javascript" src="js/WeatherMapSearch.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+
+</html>

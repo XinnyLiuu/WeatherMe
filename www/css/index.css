@@ -1,0 +1,36 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#map {
+    height: 50%;
+}
+
+#navbar {
+    background-color: rgb(103, 58, 183) !important;
+    color: white !important;
+}
+
+#dashboard {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+#search {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+#searchZip {
+    background-image: linear-gradient(0deg, rgb(103, 58, 183) 2px, rgba(0, 150, 136, 0) 0), linear-gradient(0deg, rgba(0, 0, 0, .26) 1px, transparent 0) !important;
+}
+
+.space {
+    padding: 5px;
+}
